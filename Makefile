@@ -1,6 +1,8 @@
-RUN = ""
+.PHONY: install_depss
+
+RUN = 
 ifeq ($(OS),Windows_NT)
-	RUN += ""
+	RUN += 
 else
 	UNAME = $(shell uname -s)
 	ifeq ($(UNAME), Linux)
@@ -12,6 +14,6 @@ else
 endif
 
 install_deps:
-	$(RUN)
+	$(shell $(RUN))
 build:
 	go build -ldflags -H=windowsgui -tags hint -o bin/osu_downloader.exe . 
