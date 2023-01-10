@@ -4,6 +4,7 @@ go 1.19
 
 require (
 	fyne.io/fyne v1.4.3
+	github.com/sqweek/dialog v0.0.0-20220809060634-e981b270ebbf
 	golang.design/x/clipboard v0.6.3
 )
 
@@ -17,7 +18,6 @@ require (
 	github.com/godbus/dbus/v5 v5.1.0 // indirect
 	github.com/goki/freetype v0.0.0-20220119013949-7a161fd3728c // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
-	github.com/sqweek/dialog v0.0.0-20220809060634-e981b270ebbf // indirect
 	github.com/srwiley/oksvg v0.0.0-20220731023508-a61f04f16b76 // indirect
 	github.com/srwiley/rasterx v0.0.0-20210519020934-456a8d69b780 // indirect
 	github.com/stretchr/testify v1.8.0 // indirect

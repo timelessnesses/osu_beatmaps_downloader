@@ -48,6 +48,13 @@ func main() {
 			return
 		}
 		download.Set_Download_Source(download.Sources(selected))
+		if beatmap_id.Text == "" {
+			status_text.SetText("Status: Beatmap ID isn't entered")
+			return
+		}
+		if !download.Check_Beatmap_ID(beatmap_id.Text) {
+			status_text.SetText("Status: Beatmap ID isn't valid")
+		}
 		b, err := download.Download_Beatmap(beatmap_id.Text, a, status_text)
 		if err != nil {
 			status_text.SetText("Status: Failed to download the beatmap.\n" + err.Error())

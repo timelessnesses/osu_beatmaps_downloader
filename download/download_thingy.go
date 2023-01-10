@@ -4,6 +4,7 @@ import (
 	"io"
 	"net/http"
 	"os"
+	"strings"
 
 	"fyne.io/fyne/widget"
 )
@@ -40,6 +41,10 @@ func Download_Beatmap(beatmap_id string, path string, status_text *widget.Label)
 		return "", err
 	}
 	defer req.Body.Close()
+	x, _ := io.ReadAll(req.Body)
+	if strings.Contains(string(x), "set_not_found") {
+		status_text.SetText("Status: Failed to fetch osz. Set not found (by Chimu)")
+	}
 	print(path)
 	file, _ := os.Create(path + "/" + Random_id(10) + ".osz")
 	defer file.Close()
