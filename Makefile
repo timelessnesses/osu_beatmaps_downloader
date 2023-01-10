@@ -8,6 +8,7 @@ else
 	endif
 	ifeq ($(UNAME), Darwin)
 		RUN += "brew install gtk+3"
+	endif
 endif
 
 install_deps:
