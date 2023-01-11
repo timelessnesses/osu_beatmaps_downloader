@@ -18,5 +18,3 @@ install_deps:
 build:
 	go install github.com/fyne-io/fyne-cross@latest
 	fyne-cross windows -arch=*
-	fyne-cross linux -arch=*
-	fyne-cross freebsd -arch=*
