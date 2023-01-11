@@ -13,7 +13,7 @@ permissions: write-all
 
 jobs:
   build:
-    runs-on: windows-latest # already have gtk
+    runs-on: ubuntu-latest # why
     steps:
     - uses: actions/checkout@v3
 
