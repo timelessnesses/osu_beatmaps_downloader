@@ -1,4 +1,4 @@
-.PHONY: install_depss
+.PHONY: install_deps
 
 RUN = 
 ifeq ($(OS),Windows_NT)
@@ -14,7 +14,7 @@ else
 endif
 
 install_deps:
-	$(shell $(RUN))
+	$(RUN)
 build:
 	go install github.com/fyne-io/fyne-cross@latest
 	fyne-cross windows -arch=*
