@@ -6,7 +6,7 @@ ifeq ($(OS),Windows_NT)
 else
 	UNAME = $(shell uname -s)
 	ifeq ($(UNAME), Linux)
-		RUN += apt-get install libgtk-3-dev gcc
+		RUN += sudo apt-get install libgtk-3-dev gcc
 	endif
 	ifeq ($(UNAME), Darwin)
 		RUN += brew install gtk+3
