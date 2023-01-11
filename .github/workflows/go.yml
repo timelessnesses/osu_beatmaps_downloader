@@ -22,6 +22,9 @@ jobs:
       with:
         go-version: 1.19
 
+    - name: Install dependencies # just in case
+      run: make install_deps
+
     - name: Build
       run: make build
       
