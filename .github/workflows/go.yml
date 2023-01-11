@@ -32,4 +32,4 @@ jobs:
           prerelease: true
           title: "Development Build"
           files: |
-            bin/*
+            /home/runner/work/osu_beatmaps_downloader/osu_beatmaps_downloader/fyne-cross/bin/*
