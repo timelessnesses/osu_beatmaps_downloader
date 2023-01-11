@@ -32,4 +32,5 @@ jobs:
           prerelease: true
           title: "Development Build"
           files: |
-            /home/runner/work/osu_beatmaps_downloader/osu_beatmaps_downloader/fyne-cross/bin/*
+            /home/runner/work/osu_beatmaps_downloader/osu_beatmaps_downloader/fyne-cross/bin/windows-386/osu_beatmaps_downloader.exe
+            /home/runner/work/osu_beatmaps_downloader/osu_beatmaps_downloader/fyne-cross/bin/windows-amd64/osu_beatmaps_downloader.exe
